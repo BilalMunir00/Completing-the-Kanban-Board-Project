@@ -8,8 +8,7 @@
     <Dropzone Priority="TaskPriority.High"
               TaskItems="TaskItems"
               OnDrop="OnDrop"
-              OnStartDrag="OnStartDrag"
-              OnDelete="OnDelete" />
+              OnStartDrag="OnStartDrag" />
 
     <Dropzone Priority="TaskPriority.Medium"
               TaskItems="TaskItems"
@@ -56,13 +55,6 @@
     {
         CurrentItem = item;
     }
-     private void OnDelete(TaskItem item)
-    {
-       Console.WriteLine("Standard Numeric Format Specifiers");
-       Console.WriteLine(item.TaskName.ToString());
-       TaskItems.Remove(item);
-
-    }
 
     private void OnDrop(TaskPriority priority)
     {
@@ -78,6 +70,8 @@
         };
         TaskItems.Add(taskItem);
     }
+        @* Write your code here *@
+        
 }
 
 
