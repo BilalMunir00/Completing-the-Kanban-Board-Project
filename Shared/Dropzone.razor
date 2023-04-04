@@ -6,18 +6,14 @@
         @foreach (var item in TaskItems
         .Where(q => q.Priority == Priority))
         {
-            <div class="">
+            
             <div class="draggable " draggable="true" @ondragstart="@(() => OnDragStartHandler(item))">
                 @item.TaskName
                 <span class="badge badge-secondary">@item.Priority</span>
             </div>
-                <button class="btn btn-danger btn-sm " 
-                        title="Delete task"
-                        @onclick= "@(()=>onDeleteHandler(item))" >
-                    <span class="oi oi-trash"></span>
-                </button>
-        </div>
-
+           
+           @* Write your code here *@
+        
         }
 </div>
 </div>
@@ -31,8 +27,8 @@
     public EventCallback<TaskPriority> OnDrop { get; set; }
     [Parameter]
     public EventCallback<TaskItem> OnStartDrag { get; set; }
-    [Parameter]
-    public EventCallback<TaskItem> OnDelete { get; set; }
+    
+    @* Write your code here *@
     
 
     private void OnDropHandler()
