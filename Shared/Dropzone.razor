@@ -28,9 +28,6 @@
     [Parameter]
     public EventCallback<TaskItem> OnStartDrag { get; set; }
     
-    @* Write your code here *@
-    
-
     private void OnDropHandler()
     {
         OnDrop.InvokeAsync(Priority);
@@ -40,8 +37,7 @@
     {
         OnStartDrag.InvokeAsync(task);
     }
-    private void onDeleteHandler(TaskItem task)
-    {
-        OnDelete.InvokeAsync(task);
-    }
+    
+    @* Write your code here *@
+
 }
