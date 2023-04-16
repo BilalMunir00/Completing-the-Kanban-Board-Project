@@ -6,7 +6,7 @@
     background: #ff6a00;
     color: #ffffff;
     border-radius: 5px;
-    width: 16rem;
+    width: 20rem;
 }
 .container{
     display: flex;
@@ -17,11 +17,11 @@
     max-width: 20rem;
     padding: 5px 5px;
 }
-.draggable 
 
-    .draggable:active {
-        cursor: grabbing;
-    }
+
+.draggable:active {
+    cursor: grabbing;
+}
 
 .dropzone {
     padding: .75rem;
