@@ -8,17 +8,6 @@
     border-radius: 5px;
     width: 20rem;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-between;
-    max-width: 20rem;
-    padding: 5px 5px;
-}
-
-
 .draggable:active {
     cursor: grabbing;
 }
